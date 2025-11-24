@@ -69,7 +69,6 @@ st.markdown("""
     }
     .btn-hitung {
         display: inline-block;
-        text-align: right;
         padding: 12px 24px;
         font-size: 16px;
         font-weight: bold;
@@ -120,7 +119,7 @@ tipe_pias = st.radio(
 )
 
 # Tombol dengan HTML
-hitung = st.markdown(
-    "<button class='btn-hitung'>Hitung Integral</button>",
+st.markdown(
+    "<div style='text-align: right'><button class='btn-hitung'>Hitung Integral</button></div>",
     unsafe_allow_html=True
 )
