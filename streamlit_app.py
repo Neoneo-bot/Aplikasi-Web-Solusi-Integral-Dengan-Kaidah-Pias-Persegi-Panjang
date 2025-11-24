@@ -60,6 +60,13 @@ st.markdown("""
         color: #cccccc;
         margin-bottom: 10px;
     }
+    .label-pias {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffffff;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
     </style>
 
     <div class="judul">Aplikasi Web Solusi Integral Dengan Kaidah Pias Persegi Panjang</div>
@@ -85,3 +92,10 @@ with col3:
     n = st.number_input("", min_value=1, step=1, key="pias")
    
     st.markdown("<div class='nb-fungsi'>NB: 1,00 = 1</div>", unsafe_allow_html=True)
+# Pilihan tipe pias
+st.markdown("<div class='label-pias'>Pilih Tipe Pias:</div>", unsafe_allow_html=True)
+tipe_pias = st.radio(
+    "",
+    options=["Left Rectangle", "Right Rectangle", "Midpoint"],
+    horizontal=True
+)
