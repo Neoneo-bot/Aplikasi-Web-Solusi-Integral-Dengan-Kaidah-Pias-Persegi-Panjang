@@ -2,5 +2,5 @@ import streamlit as st
 
 st.title("Aplikasi Web Solusi Integral Dengan Kaidah Pias Persegi Panjang")
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+    " Masukkan fungsi dan parameter integral untuk menghitung estimasi integral menggunakan Rectangle Rule."
 )
