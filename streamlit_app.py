@@ -78,3 +78,5 @@ with col2:
 with col3:
     st.markdown("<div class='label-param'>Jumlah Pias (n)</div>", unsafe_allow_html=True)
     n = st.number_input("", min_value=1, step=1, key="pias")
+    
+    st.markdown("<div class='NB: 1,00 = 1</div>", unsafe_allow_html=True)
