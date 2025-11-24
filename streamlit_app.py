@@ -77,10 +77,13 @@ st.markdown("""
         cursor: pointer;
         transition: background-color 0.3s ease;
         margin-top: 30px;
+        animation: fadeInUp 2.6s ease-out;
     }
 
     .btn-hitung:hover {
         background-color: #218838;
+        transform: scale(1.05);
+        animation: pulse 1s infinite;
     }
     </style>
 
