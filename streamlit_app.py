@@ -132,8 +132,21 @@ tipe_pias = st.radio(
     horizontal=True
 )
 
-# Tombol dengan HTML
-st.markdown(
-    "<div style='text-align: right'><button class='btn-hitung'>Hitung Integral</button></div>",
-    unsafe_allow_html=True
-)
+# Tombol hitung
+if st.button("Hitung Intrgral"):
+    try:
+        #parsing fungsi
+        x = sp.symbols('x')
+        f = sp.sympify(fungsi_input)
+        f_num = sp.lambdify(x, f, "numpy")
+
+        #lebar pias
+        h = (b - a) / n
+
+        #meentukan titik evaluasi
+        if tipe_pias == "Left Rectangle":
+            xs = np.linspace(a, b - h, n)
+        elif tipe_pias == "Right Rectangle":
+            xs = np.linspace(a + h, b, n)
+        else:  # Midpoint
+            xs = np.linspace(a + h/2, b - h/2, n)
