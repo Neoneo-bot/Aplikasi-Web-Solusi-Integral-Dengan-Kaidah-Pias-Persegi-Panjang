@@ -49,6 +49,12 @@ st.markdown("""
         border-radius: 8px;
         padding-left: 10px;
     }
+        .label-param {
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffff;
+        margin-bottom: 5px;
+    }
     </style>
 
     <div class="judul">Aplikasi Web Solusi Integral Dengan Kaidah Pias Persegi Panjang</div>
@@ -60,3 +66,15 @@ st.markdown("""
 st.markdown("<div class='label-fungsi'>FUNGSI f(x)</div>", unsafe_allow_html=True)
 st.markdown("<div class='contoh-fungsi'>contoh: x^2 + 3x + 1</div>", unsafe_allow_html=True)
 fungsi_input = st.text_input("", placeholder="Masukkan fungsi di sini...")
+
+# Input parameter integral
+col1, col2, col3 = st.columns(3)
+with col1:
+    st.markdown("<div class='label-param'>Batas Bawah (a)</div>", unsafe_allow_html=True)
+    a = st.number_input("", key="bawah", format="%.4f")
+with col2:
+    st.markdown("<div class='label-param'>Batas Atas (b)</div>", unsafe_allow_html=True)
+    b = st.number_input("", key="atas", format="%.4f")
+with col3:
+    st.markdown("<div class='label-param'>Jumlah Pias (n)</div>", unsafe_allow_html=True)
+    n = st.number_input("", min_value=1, step=1, key="pias")
