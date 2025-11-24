@@ -12,7 +12,7 @@ st.markdown("""
         text-align: center;
         font-size: 32px;
         font-weight: bold;
-        color: white;
+        color: #dddddd;
         margin-top: 30px;
     }
     .garis {
@@ -21,7 +21,7 @@ st.markdown("""
         background: linear-gradient(to right, #888, #ccc, #888);
         margin: 20px auto;
         width: 60%;
-
+    }
     .deskripsi {
         animation: fadeIn 3s ease-out;
         text-align: left;
