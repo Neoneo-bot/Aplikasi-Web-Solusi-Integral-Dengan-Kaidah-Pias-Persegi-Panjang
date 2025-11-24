@@ -52,11 +52,13 @@ st.markdown("""
         font-weight: bold;
         color: #ffffff;
         margin-bottom: 5px;
+        animation: fadeInUp 2s ease-out;
     }
      .nb-fungsi {
         font-size: 14px;
         color: #cccccc;
         margin-bottom: 10px;
+        animation: fadeInUp 2.2s ease-out;
     }
     .label-pias {
         font-size: 18px;
@@ -64,6 +66,7 @@ st.markdown("""
         color: #ffffff;
         margin-top: 30px;
         margin-bottom: 10px;
+        animation: fadeInUp 2.4s ease-out;
     }
     .btn-hitung {
         display: inline-block;
