@@ -17,8 +17,8 @@ st.markdown("""
     }
 
     .deskripsi {
-        animation: fadeIn 2s ease-out;
-        text-align: center;
+        animation: fadeIn 3s ease-out;
+        text-align: right;
         font-size: 18px;
         color: #dddddd;
         margin-top: 10px;
