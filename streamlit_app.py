@@ -24,7 +24,7 @@ st.markdown("""
     }
     .deskripsi {
         animation: fadeIn 3s ease-out;
-        text-align: left;
+        text-align: center;
         font-size: 18px;
         color: #dddddd;
         margin-top: 10px;
@@ -32,6 +32,7 @@ st.markdown("""
     </style>
 
     <div class="judul">Aplikasi Web Solusi Integral Dengan Kaidah Pias Persegi Panjang</div>
+    <hr class="garis">
     <div class="deskripsi">Masukkan fungsi dan parameter integral untuk menghitung estimasi integral menggunakan Rectangle Rule.</div>
 """, unsafe_allow_html=True)
 
