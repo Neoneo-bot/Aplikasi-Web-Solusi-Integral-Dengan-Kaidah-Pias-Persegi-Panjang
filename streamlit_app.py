@@ -135,6 +135,9 @@ tipe_pias = st.radio(
 # Tombol hitung
 if st.button("Hitung Intrgral"):
     try:
+        if a > b:
+            a, b = b, a
+
         #parsing fungsi
         x = sp.symbols('x')
         f = sp.sympify(fungsi_input)
