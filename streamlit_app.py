@@ -12,7 +12,7 @@ st.markdown("""
         text-align: center;
         font-size: 32px;
         font-weight: bold;
-        color: #ffffff;
+        color: ;
         margin-top: 30px;
     }
     .garis {
