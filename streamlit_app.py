@@ -40,13 +40,13 @@ st.markdown("""
         margin-top: 40px;
         margin-bottom: 5px;
         color: #ffffff;
-        animation: fadeInUp 1.2s ease-out;
+        animation: fadeInUp 4s ease-out;
     }
     .contoh-fungsi {
         font-size: 14px;
         color: #cccccc;
         margin-bottom: 10px;
-        animation: fadeInUp 1.5s ease-out;
+        animation: fadeInUp 4s ease-out;
     }
     .stTextInput > div > input {
         height: 45px;
@@ -54,20 +54,20 @@ st.markdown("""
         border-radius: 8px;
         padding-left: 10px;
         transition: box-shadow 0.3s ease;
-        animation: fadeInUp 1.8s ease-out;
+        animation: fadeInUp 5s ease-out;
     }
     .label-param {
         font-size: 16px;
         font-weight: bold;
         color: #ffffff;
         margin-bottom: 5px;
-        animation: fadeInUp 2s ease-out;
+        animation: fadeInUp 5s ease-out;
     }
      .nb-fungsi {
         font-size: 14px;
         color: #cccccc;
         margin-bottom: 10px;
-        animation: fadeInUp 2.2s ease-out;
+        animation: fadeInUp 6s ease-out;
     }
     .label-pias {
         font-size: 18px;
@@ -75,7 +75,7 @@ st.markdown("""
         color: #ffffff;
         margin-top: 30px;
         margin-bottom: 10px;
-        animation: fadeInUp 2.4s ease-out;
+        animation: fadeInUp 6s ease-out;
     }
     .btn-hitung {
         display: inline-block;
