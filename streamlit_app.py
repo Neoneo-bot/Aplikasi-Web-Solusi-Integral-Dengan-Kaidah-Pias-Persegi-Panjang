@@ -109,10 +109,10 @@ fungsi_input = st.text_input("", placeholder="Masukkan fungsi di sini...")
 col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown("<div class='label-param'>Batas Bawah (a)</div>", unsafe_allow_html=True)
-    a = st.number_input("", key="bawah", format="%.0f", value=0.0)
+    a = st.number_input("", key="bawah", format="%.2f", value=0.0)
 with col2:
     st.markdown("<div class='label-param'>Batas Atas (b)</div>", unsafe_allow_html=True)
-    b = st.number_input("", key="atas", format="%.0f", value=1.0)
+    b = st.number_input("", key="atas", format="%.2f", value=1.0)
 with col3:
     st.markdown("<div class='label-param'>Jumlah Pias (n)</div>", unsafe_allow_html=True)
     n = st.number_input("", min_value=1, step=1, key="pias", value=10)
@@ -150,11 +150,11 @@ if st.button("Hitung Intrgral"):
             
         # Hitung integral aproksimasi
         integral_est = np.sum(f_num(xs) * h)
-        st.success(f"Hasil estimasi integral: {integral_est:.0f}")
+        st.success(f"Hasil estimasi integral: {integral_est:.2f}")
 
         # Bandingkan dengan integral eksak
         integral_exact = sp.integrate(f, (x, a, b))
-        st.info(f"Nilai integral eksak: {float(integral_exact):.0f}")
+        st.info(f"Nilai integral eksak: {float(integral_exact):.2f}")
         
         # Visualisasi pias
         fig, ax = plt.subplots()
