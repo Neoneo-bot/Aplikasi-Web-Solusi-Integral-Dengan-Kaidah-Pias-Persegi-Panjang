@@ -108,9 +108,9 @@ st.markdown("""
 
 # Input fungsi
 st.markdown("<div class='label-fungsi'>FUNGSI f(x)</div>", unsafe_allow_html=True)
-st.markdown("<div class='contoh-fungsi'>contoh: x^2 + 3x + 1</div>", unsafe_allow_html=True)
+st.markdown("<div class='contoh-fungsi'>contoh: x^2 + 3*x + 1</div>", unsafe_allow_html=True)
 fungsi_input = st.text_input("", placeholder="Masukkan fungsi di sini...")
-st.markdown("<div class='nb-fungsi'>NB : * = KALI atau x</div>", unsafe_allow_html=True)
+st.markdown("<div class='nb-fungsi'>NB : * = kali atau x, ^ = pangkat</div>", unsafe_allow_html=True)
 
 # Input parameter integral
 col1, col2, col3 = st.columns(3)
